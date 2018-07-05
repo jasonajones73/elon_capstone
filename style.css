@@ -1,0 +1,828 @@
+/**
+ Credits to Andrea Alba for parallax tutorial
+
+ * @Copyright: subjuliodesign
+ */
+
+
+
+/* =======================
+#General
+======================= */
+* {margin: 0; padding: 0;}
+html,
+body {width: 100%; height: 100%; font-family:  'PMN Caecilia', 'Arial', serif; color: #e7e9ec; background-color: rgb(56,72,94);}
+
+
+
+/* =======================
+#Typography
+======================= */
+h1 {font-size: 3em; line-height: 1.05em; color: white;}
+h2 {font-size: 2.25em; line-height: 1.25em; color: white;}
+h3 {font-size: 1.75em; line-height: 1.25em; color: white;}
+h4 {font-size: 1.5em; line-height: 1.22222222em; color: white;}
+p, ol, ul {  padding-right: 5px; padding-left: 5px; color: #e7e9ec; font-size: 20px; padding-bottom: 10px }
+
+#map {
+display: block;
+margin-left: auto;
+margin-right: auto;   
+padding: 20px;
+    
+}
+
+ol {margin-left: 50px; }
+
+
+body div {
+    
+max-width: 100%;     
+ 
+
+
+}
+
+
+h1, h2, h3, h4 {
+    
+font-family: 'Proxima Nova', 'Arial', serif; 
+    
+}
+
+
+
+
+h4, h3 {
+ float: none; 
+margin: 0 auto; 
+text-align: center;
+ color: white;   
+align-content: center;
+}
+
+a {
+
+color: aqua;
+    
+    
+}
+
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgb(55, 55, 55);
+border: 1px solid white; 
+ position: relative;
+  top: -40px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,.25);
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .1s ease;
+  padding: 17px 20px 20px 20px;
+    
+    
+}
+
+
+
+.wrap {
+  width: 100%;
+  position: relative;
+  animation: bounce 1s infinite;
+}
+
+.arrow {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@keyframes bounce {
+    50% {
+    top: 0px;
+    }  
+    90.75% {
+    top: 5px;
+    } 
+   90.25% {
+    top: -5px;
+    }  
+    65% {
+    top: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+#intro1 h3 {
+
+font-size: 75px; 
+margin-bottom: none; 
+
+    
+    
+}
+
+
+/** Chapter 2 */
+
+#title2 {
+    
+margin-bottom: 25px;    
+   
+    
+}
+
+
+#top2 {
+    
+    
+width: 100%;
+margin: 0 auto; 
+max-width: 1180px;    
+    
+    
+    
+}
+
+
+#revenue {
+width: 60%;
+  
+padding: 20px;  
+float: right;
+}
+
+
+#intro2 {
+
+width: 100%;
+
+max-width: 1180px;  
+position: relative;
+border-bottom: 2px solid grey; 
+padding-bottom: 75px;
+color: white;  
+padding-top: 25px; 
+font-size: 20px; 
+    
+}
+
+#intro2 p {
+    
+ padding: 10px;    
+    
+}
+
+
+
+
+
+#money {
+    
+ max-width: 900px;
+
+ float: none; 
+margin: 0 auto;   
+text-align: center;
+align-content: center;
+margin-top: 100px; 
+
+
+    padding-top: 10px; 
+    padding-bottom: 8px; 
+}
+
+
+#calc {
+    
+margin-top: 50px;    
+    
+}
+
+
+#bottom2 {
+display: flex; 
+justify-content: space-between;
+flex-direction: row;     
+width: 100%; 
+max-width: 1180px; 
+margin: 0 auto;
+    
+   
+}
+
+
+
+
+
+#calculation1, #calculation2 {
+ flex: auto;    
+ margin-bottom: 25px;
+max-width: 50%;
+padding: 20px;
+padding: 20px;
+color: #e7e9ec;  
+ font-size: 22px;   
+    
+    
+}
+
+#calculation1 h4, #calculation2 h4 {
+    
+
+margin-top: 25px;   
+margin-bottom: 10px;    
+       
+    
+}
+
+
+
+#example {   
+align-items: center;   
+
+align-content: center;
+margin: 0 auto;
+text-align: center;
+ float: none; 
+max-width: 100%;
+margin-bottom: 150px; 
+width: 900px;
+
+
+
+}
+
+#example img {
+ 
+ float: none; 
+margin: 0 auto; 
+text-align: center;
+  
+align-content: center;
+    
+    
+}
+
+
+
+/**Chapter 3 */
+
+
+#serviceTitle {
+    
+max-width: 775px;    
+
+}
+
+
+#flex {
+margin: 0 auto; 
+display: flex; 
+justify-content: center; 
+width: 100%;
+border: none; 
+max-width: 1180px; 
+flex-wrap: nowrap;
+flex-direction: column; 
+text-align: center;
+margin-bottom: 100px; 
+    
+}
+
+#flex img {
+    
+ height: 100px;   
+    
+    
+}
+
+
+
+
+
+#row1, #row2, #row3, #row4, #row5, #row6 {
+ display: flex;   
+ flex: 1 1 auto;
+width: 100%;
+flex-direction: row;
+border-top: 2px solid grey; 
+border-bottom: 2x solid grey;
+
+
+    
+}
+
+
+
+
+
+
+
+
+#column1-a, #column3-a, #column5-a {
+    
+width: 30%;
+border-right: 2px solid grey;
+flex: 1 1 auto;   
+padding-top: 15px;
+padding-bottom: 15px;
+    
+    
+}
+
+#column1-b, #column3-b, #column5-b {
+ padding-left: 15px;  
+ width: 75%;
+flex: 1 1 auto;  
+text-align: left;
+padding-top: 20px; 
+  
+       
+}
+    
+    
+ #column2-a, #column4-a, #column6-a {
+    
+ width: 75%;
+padding-left: 20px;
+flex: 1 1 auto;  
+padding-top: 20px; 
+text-align: left; 
+    
+}   
+    
+    
+ #column2-b, #column4-b, #column6-b {
+    
+ width: 30%;
+padding-left: 5px; 
+ border-left: 2px solid grey; 
+flex: 1 1 auto;  
+ padding-top: 15px;
+padding-bottom: 15px;  
+       
+} 
+
+
+#column6-a, #column6-b {
+    
+border-bottom: 2px solid grey;     
+    
+    
+}
+
+
+#flex h3 {
+    
+padding-bottom: 15px;
+margin-top: 100px;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+.tableauPlaceholder, #timeline, #viz1524152837284 {
+    
+max-width: 900px;     
+align-content: center; 
+margin: 0 auto; 
+    
+    
+    
+}
+
+
+
+/*Chapter 4*/
+
+
+
+#data {
+    
+max-width: 775px;    
+    
+    
+}
+
+
+#container {
+    
+
+max-width: 100%; 
+margin: 0 auto; 
+display: block;
+width: 1800px; 
+    
+}
+
+
+#legend {
+
+float: right;  
+width: 250px; 
+padding-top: 50px; 
+max-width: 19%;   
+}
+
+
+#viz1524164763101 {
+    
+width: 800px;  
+max-width: 80%
+    
+    
+}
+
+
+
+
+ #dept h3, #dept2 h3 {    
+margin-bottom: 15px;    
+    
+}
+
+
+
+
+
+
+ #intro3 h3, #intro4 h3, #intro5 h3 {
+margin-bottom: 50px;    
+color: white;   
+ -webkit-text-stroke: .5px rgba(56, 71, 93, .5);
+    
+}
+
+
+
+
+
+
+
+
+
+#intro1,
+#intro3,
+#intro4,
+#intro5,
+#conclusion
+{
+margin: 0 auto; 
+ border-top: 2px solid grey;   
+ border-bottom: 2px solid grey; 
+padding: 15px;
+margin-top: 100px;
+margin-bottom: 100px;
+width: 800px;
+max-width: 100%;
+	-moz-transition: all 0.25s;
+	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
+
+       
+}
+
+
+#intro1:hover,
+#intro3:hover,
+#intro4:hover,
+#intro5:hover,
+#conclusion:hover
+{
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+border: 3px solid grey; 
+border-radius: 25px; 
+color: white; 
+box-shadow: 8px 10px rgb(55, 55, 55);
+background-color: rgba(55, 55, 55, .3);
+}
+
+
+#intro1 p {
+    
+ padding: 15px;    
+    
+} 
+
+
+
+
+
+
+
+
+
+
+#community {
+margin-bottom: 100px;       
+}
+
+#spending {
+ margin-top:100px; 
+margin-bottom: 100px; 
+       
+    
+}
+
+
+#dept, #dept2 {
+margin-top: 100px;
+margin: 0 auto; 
+margin-bottom: 100px; 
+margin-top: 100px; 
+margin-bottom: 100px; 
+width: 800px; 
+max-width: 100%;
+
+    
+}
+
+#experience {
+    
+max-width: 775px;     
+    
+    
+    
+}
+
+ul {
+    
+padding-left: 50px;     
+    
+    
+    
+}
+
+
+
+#viz1524531773291 {
+
+margin-bottom: 200px;
+    
+}
+
+#timeline {
+    
+margin-bottom: 100px;    
+    
+    
+}
+
+#conclusion p, #conclusion ul {
+    
+margin-bottom: 25px;     
+    
+    
+}
+
+#conclusion h3 {
+margin-bottom: 25px;     
+    
+}
+
+#last {
+    
+margin-bottom 200px;     
+    
+}
+
+
+/* =======================
+#Parallax
+======================= */
+
+.parallax1 {min-height: 100%;
+  /* background-color: #08AEEA; */
+background-image: url('img/gbo.jpg');
+background-image: url('img/gbo.jpg');
+    opacity: .9;
+}
+
+
+
+
+.parallax2 {min-height: 50%;
+  /* background-color: #FBDA61; */
+background-image: url(img/moneyPic.png);
+background-image: url('img/moneyPic.png');
+color: red;
+}
+.parallax3 {min-height: 50%;
+  /* background-color: #85FFBD; */
+background-image: url('img/teacher.jpg'), -webkit-gradient(linear, left bottom, left top, from(#85FFBD), to(#FFFB7D));
+background-image: url('img/teacher.jpg'), linear-gradient(0deg, #85FFBD 0%, #FFFB7D 100%);
+}
+
+.parallax4 {min-height: 50%;
+  /* background-color: #85FFBD; */
+background-image: url('img/transpo.jpg'), -webkit-gradient(linear, left bottom, left top, from(#85FFBD), to(#FFFB7D));
+background-image: url('img/transpo.jpg'), linear-gradient(0deg, #85FFBD 0%, #FFFB7D 100%);
+}
+
+.parallax5 {min-height: 50%;
+  /* background-color: #85FFBD; */
+background-image: url(img/woman.png);
+background-image: url('img/woman.png');
+}
+
+.parallax6 {min-height: 50%;
+  /* background-color: #85FFBD; */
+background-image: url('https://source.unsplash.com/1400x900/?nature'),;
+background-image: url('https://source.unsplash.com/1400x900/?nature'), ;
+}
+
+.parallax9 {min-height: 100%;
+  /* background-color: #85FFBD; */
+background-image: url('img/gbo.jpg'),linear-gradient(0deg, #FBDA61 0%, #FF5ACD 100%);
+background-image: url('img/gbo.jpg'), linear-gradient(0deg, #FBDA61 0%, #FF5ACD 100%);
+font-weight: 600; 
+}
+
+
+
+.parallax1,
+.parallax2,
+.parallax3, 
+.parallax4, 
+.parallax5, 
+.parallax6,
+.parallax9 {position: relative; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;
+background-blend-mode: multiply;}
+
+.parallax__caption
+{position: absolute; top: 43%; width: 100%; text-align: center; 
+
+
+}
+.parallax__caption span {
+  
+    
+    
+    text-align: center; font-size: 90px; font-weight: 800; letter-spacing: 5px; color: #f1ecce; font-family: 'Proxima Nova', 'Arial', serif;    
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    
+    opacity: 0.8;
+     
+}
+
+.parallax__caption p {
+    
+ max-width: 500px; 
+text-align: center; 
+margin: 0 auto; 
+padding-top: 20px; 
+ color: white;    
+ font-family: 'Proxima Nova', 'Arial', serif;    
+}
+
+
+
+.chapter1,
+.chapter2,
+.chapter3, 
+.chapter4,
+.chapter5,
+.chapter6 {position: relative; text-align: center; padding: 100px 80px; text-align: justify;}
+
+.chapter2,
+.chapter3,
+.chapter4,
+.chapter5, 
+.chapter6 {
+    
+ background-image: url(img/backgrd.png);  
+ background-repeat: no-repeat;
+background-size: cover; 
+width: 100%;
+
+}
+
+
+
+
+
+.chapter1__title {text-align: center; letter-spacing: 5px; text-transform: uppercase; color: white; margin: 50px 5; padding: 20px; }
+
+
+
+/* ########################
+Media Queries
+######################## */
+
+/* ------------------------
+#Desktop, iPad Pro
+------------------------ */
+@media only screen and (min-width: 1024px) and (max-width: 1170px) {
+
+}
+
+/* ------------------------
+#Display 12", iPad Pro portrait, iPad landscape
+------------------------ */
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* ------------------------
+#Medium Devices, Desktops
+------------------------ */
+@media only screen and (max-width: 992px) {
+
+  /* #Typography */
+  h1 {font-size: 2.5em; line-height: 1.125em;}
+  h2 {font-size: 2em;}
+
+}
+
+/* ------------------------
+#Display 5.5", iPad portrait, iPhone 6, 6s, 7, 8 portrait and landscape, iPhone 5s landscape
+------------------------ */
+@media only screen and (max-width: 768px) {
+
+  /* #Typography */
+  h2 {font-size: 1.625em;}
+  h3 {font-size: 1.5em;}
+
+  /* #Parallax */
+  .chapter1,
+  .chapter2,
+  .chapter3, 
+   .chapter4, 
+   .chapter5,
+    .chapter6 {padding: 30px 30px;}
+
+}
+
+/* ------------------------
+#Extra Small Devices, Phones
+------------------------ */
+@media only screen and (max-width: 480px) {
+
+  /* #Typography */
+  h1 {font-size: 2em; line-height: 1.25em;}
+  h2 {line-height: 1.15384615em;}
+  h3 {font-size: 1.375em; line-height: 1.13636364em;}
+  h4 {line-height: 1.11111111em;}
+  p {line-height: 1.25em;}
+  blockquote {line-height: 1.25em;}
+
+  /* #Parallax */
+  .parallax1,
+  .parallax2,
+  .parallax3, 
+  .parallax4, 
+  .parallax5, 
+  .parallax6, 
+  .parallax9 {background-attachment: scroll;}
+
+  .parallax__caption span {font-size: 30px; letter-spacing: 5px;}
+
+}
+
+/* ------------------------
+#Display 4", iPhone 5s portrait
+------------------------ */
+@media only screen and (max-width: 320px) {
+
+}
+
+
+
+/* =======================
+#Hacke & Fixes
+======================= */
+/* Box Size Hack */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
